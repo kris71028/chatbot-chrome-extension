@@ -1,1 +1,29 @@
-"<h1>Hello, Chatbot!</h1>" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="chatbotButton" class="chatbot-button">
+        <img src="icon.png" alt="Chatbot">
+    </div>
+
+    <div id="chatbotPopup" class="chatbot-popup hidden">
+        <div class="chat-header">
+            <button id="closeBtn" class="icon-button"><i class="fas fa-times"></i></button>
+            <button id="minimizeBtn" class="icon-button"><i class="fas fa-minus"></i></button>
+        </div>
+        <div id="chatOutput" class="chat-output"></div>
+        <div class="chat-body">
+            <textarea id="userInput" placeholder="Type your message here..."></textarea>
+            <button id="sendButton">Send</button>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

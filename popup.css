@@ -1,1 +1,80 @@
-"body { font-family: Arial, sans-serif; }" 
+.hidden {
+    display: none;
+}
+
+.chatbot-button img {
+    width: 50px;  /* Adjust width as needed */
+    height: 50px; /* Adjust height to maintain aspect ratio */
+    border-radius: 50%; /* Keeps the circular shape */
+    cursor: pointer; /* Indicates the icon is clickable */
+}
+
+.chatbot-popup {
+    width: 400px; /* Fixed width */
+    height: 600px; /* Fixed height */
+    border: 1px solid #ddd;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.icon-button:hover {
+    color: #666;
+}
+
+.chat-body {
+    margin-top: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    resize: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#sendButton {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sendButton:hover {
+    background-color: #367c39;
+}
+
+.chat-output {
+    flex-grow: 1;
+    overflow-y: auto;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+}
