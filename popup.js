@@ -20,7 +20,7 @@ async function sendMessage() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': `Bearer sk-proj-hiddem` // Replace with your actual API key
+                'Authorization': `Bearer sk-proj-hidden` // Replace with your actual API key
             },
             body: JSON.stringify({
                 model: 'gpt-3.5-turbo', 
